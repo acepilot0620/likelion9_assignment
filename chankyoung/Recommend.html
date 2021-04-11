@@ -1,0 +1,129 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+        <script>
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"
+        </script>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMMEND</title>
+    <style>
+        
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .title {
+            color: red;
+            text-align: left;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .title > h1 {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-color: black;
+            background-image: url(https://post-phinf.pstatic.net/MjAyMDA0MTRfNjgg/MDAxNTg2ODI4Njg5OTcw.k40_WkcZqXCU9YFH616tXFpPNBKIgUu-BK_GH7BdY3Qg.bK05xVw4eAbP5sLhaiQWUoPmqU3MFmlZ3kjDFcMDHKog.PNG/%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4%EB%B8%8C%EB%9E%9C%EB%93%9C%EC%8A%A4%ED%86%A0%EB%A6%AC_01.png?type=w1200);
+            background-position: 1200px 10px;
+            background-size: 280px;
+        }
+
+        .imagelist > a {
+            display: block;
+            width: 300px;
+            height: 180px;
+            margin: 10px;
+            background-size: cover;
+            color: transparent;
+            background-position: center;
+            font-size: 30px;
+            text-decoration: none;
+            text-align: center;
+            border: solid 3px red;
+        }
+
+        .imagelist1 {
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDNfNDkg%2FMDAxNjE3NDExMzkyOTg2.ezrJVx5w-83N3zOpr-nI1NsRuM9dVPrB4O8ZGJ-rBr4g.tHXIRQQ9ajn-lYa2s87TrzO9dZ4zI-t-2JxwhHIFzVwg.PNG.sh1983y%2F20210403_094646.png&type=sc960_832');
+        }
+
+        .imagelist2 {
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMjZfMTI4%2FMDAxNjA4OTM2NDg4ODQ2.SNYNf7WPkNUdWNo0b-OtlVLGfd1-03z0btHix4M_1XIg.yQFj65JIgPqOu1FE_8xzqfWXOSI30uKsPE3Nhzs8gJ0g.JPEG.addiemom0731%2F1608934990648.jpg&type=a340');
+        }
+
+        .imagelist3 {
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDNfNzAg%2FMDAxNjE3NDYxNzMzMzYw.WSTW-8K40KagEiWRJAay-D88z6SAR45ozyZ8cnJ9vosg.PBiF6lnHDWUv6vFrfa-0uzEjJZ9daQrXQjdk2U1Toqsg.JPEG.carrie0529%2F2.jpg&type=sc960_832');
+        }
+
+        .imagelist4 {
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA5MDFfMjU0%2FMDAxNTk4OTEyNjkwNjQ0.O7rQD51UovIL4pKU9h9FKwKwK_X-oJ3iav3873ebyIQg.b7zRZ_lh1poO7qYfLmcTe8UFkovtD0R5kc-I2d6OHywg.PNG.dextermin7404%2F2.png&type=sc960_832');
+        }
+
+        .imagelist5 {
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA5MTFfMTk4%2FMDAxNTM2NTkxOTI3NjM5.BN7Yyh3VEKAHNg0hhqrNsJSWW4DJ9Gc5bXBf7unPpMMg.p2rFcCL5bgrErf5q16EJIb50Ypwe-WSTKJOeAgRNuG0g.JPEG.sec1021%2F14.jpg&type=sc960_832');
+        }
+
+        .imagelist6 {
+            background-image: url('https://search.pstatic.net/sunny/?src=http%3A%2F%2Fchristianentertainmentreviews.com%2Fwp-content%2Fuploads%2F2014%2F06%2Fcatch_me_if_you_can.jpg&type=sc960_832');
+        }
+
+
+ 
+        .imagelist {
+            display: flex;
+            
+            justify-content: left;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .imagelist > a:hover {
+            color: white;
+            border-color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <br>
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="index.html">Home</a></li>
+            <li role="presentation" class="active"><a href="Best.html">Best</a></li>
+            <li role="presentation" class="active"><a href="Recommend.html">Recommend</a></li>
+           </ul>
+
+    <div class ="title">
+        <h1>RECOMMEND</h1>
+    </div>
+
+    <div class="imagelist">
+    <a class="imagelist1" href="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjRfMTIw%2FMDAxNjExNDkwODA1MjIy.EIzv8QoSANkPOu9B7p8yYy3oKk7MislMpED74ySo77Ug.XSJ4kRTSRaSva05pbD9RAABsXxbL9BJs7ncSJgGn_jMg.JPEG.hodduk77%2F4.JPG&type=sc960_832">종이의 집</a>
+    <a class="imagelist2" href="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5359%2F2020%2F12%2F19%2F0000366051_001_20201219184115565.jpg&type=a340">스위트홈</a>
+    <a class="imagelist3" href="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMDVfMTI1%2FMDAxNjA3MTUwNzgzMjI5.zfJ7hErBSd0ippH01H5TbRPY6h9bvTwhe7NhghC9ZT0g.nZ6YMrchK-OAzfRv1FPeuHhvDGmwMiX9LJmDZW-Iw48g.JPEG.eueuy%2F20201205_154549.jpg&type=a340">퀸스갬빗</a>
+    <a class="imagelist4" href="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA5MDFfMjU0%2FMDAxNTk4OTEyNjkwNjQ0.O7rQD51UovIL4pKU9h9FKwKwK_X-oJ3iav3873ebyIQg.b7zRZ_lh1poO7qYfLmcTe8UFkovtD0R5kc-I2d6OHywg.PNG.dextermin7404%2F2.png&type=sc960_832">루시퍼</a>
+    <a class="imagelist5" href="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA2MjNfMTUg%2FMDAxNTkyOTE2NjAxMjc1.k4cTaSMqC742955dIOsmgczloh3ZqDrsLYLfstW2luYg.MSUCW0Sev-RYuKpAisCh5KAU8xO68WZVpZ8ZZcNXECwg.JPEG.dongyoon87%2Fz2-4.jpg&type=a340">데드풀</a>
+    <a class="imagelist6" href="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMTZfMjYy%2FMDAxNjEwODA1NTcxNjY5.CFD8V0xqOSqQBnbaXnUwyLJil_Csytr6zFsklrrCuGgg.buEEeE3y7NEzpUxOg_wq6KU4iKujVBjJiMxxE6zivwEg.JPEG.recordhobby%2F4e7668d9bdb758ed3a43146529b9df66.jpg&type=a340">캐치미이프유캔</a>
+    </div>
+
+    </div>
+
+</body>
+</html>
