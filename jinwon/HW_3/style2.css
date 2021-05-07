@@ -1,0 +1,72 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.title {
+  font-size: 20px;
+  align-items: center;
+  font-weight: bolder;
+  margin-right: 125px;
+}
+.logins {
+  padding-left: 125px;
+}
+.login {
+  font-size: 20px;
+  padding: 10px;
+}
+.join {
+  color: white;
+  background-color: green;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bolder;
+}
+.textsummary {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.introductiontitle {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.body1title {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.body2title {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.conclutiontitle {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.introductiondetails {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.body1details {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.body2details {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.conclutiondetails {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+}

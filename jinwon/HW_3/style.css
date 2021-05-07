@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.title {
+  font-size: 20px;
+  align-items: center;
+  font-weight: bolder;
+}
+.login {
+  font-size: 20px;
+  padding: 10px;
+}
+.join {
+  color: white;
+  background-color: green;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bolder;
+}
+.maincontents {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explains {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.filebox {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  margin: 30px;
+  height: 300px;
+  width: 1000px;
+  background-color: yellowgreen;
+  flex-direction: column;
+}
+.filebox i {
+  font-size: 70px;
+  padding: 20px;
+}
+.filebtn {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.details {
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
