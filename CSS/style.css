@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    min-width: 1060px;
+    line-height: 1.6;
+    font-family: Roboto, Avenir, sans-serif;
+    padding: 20px;
+}
+div {
+    float:left;
+    border-collapse:collapse;
+  }
+a{
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+a:link, a:visited, a:active { color:inherit;}
+  
+  #introduction {
+      
+    height:200px;
+    width:100%;
+    background:white;
+    border: solid;
+    border-collapse: collapse;
+  }
+  #samsung {
+      
+    height:100px;
+    width:100%;
+    background:white;
+    border: solid;
+    border-collapse: collapse;
+  }
+  #news {
+      
+    height:200px;
+    width:50%;
+    background:white;
+    border: solid;
+    border-collapse: collapse;
+  }
+  
+  #stockinfo {
+      
+    height:200px;
+    width:50%;
+    background:white;
+    border: solid;
+    border-collapse: collapse;
+  }
+  
+  #stock {
+    height:400px;
+    width:40%;
+    background:white;
+    border: solid;
+    border-collapse: collapse;
+  }
+  #predict{
+    height:400px;
+    width:60%;
+    background:white;
+    border: solid;
+    border-collapse: collapse;
+  }
