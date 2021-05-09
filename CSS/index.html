@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 40px;
+        }
+        header{
+            display:flex;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="stock_black.png" alt="error" width="50px" height="50px">
+        <h1 id = "title"> <strong>Stock Analysis and Prediction</strong> </h1>
+    </header>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"><strong>Navigation tools</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Stock
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <article>
+        <div id="introduction">
+            <h2 style="padding:10px;"><strong>Service Introductions</strong></h2>
+            <p style="padding:10px">Create a learning model by analyzing stocks with institutional, foreign, buying and selling data as input data. And based on these learning data, it is a service that analyzes whether the stock price will rise or fall after learning the current foreign sales volume of the institution in real time. In addition, a service that provides data related to the share price of the company that the consumer is interested in.</p>
+        </div>
+        <div id="samsung">
+            <img src="https://img.hankyung.com/photo/201901/50593_97602_4446.jpg" alt="samsung" width="180px" height="80px" style="display: inline-block; padding-left: 20px;">
+            <h3 style="display: inline-block; color: blue;" ><strong>Samsung Electronics Co., Ltd.</strong> </h3>
+            <h4 style="display: inline-block; color: skyblue;" ><strong>&nbsp&nbsp&nbsp&nbsp82,300 (-0.36%)</strong> </h3>
+        </div>
+        <div id="news">
+            <h2 style="padding: 10px;"><strong>Related New</strong></h3>
+            <a href="https://www.yna.co.kr/view/AKR20210505062200003?input=1195m"><strong>(연합뉴스)</strong> 인텔·TSMC에 역전 허용한 삼성전자…2분기 반등할까</a>
+            <br>
+            <a href="https://www.chosun.com/economy/int_economy/2021/05/06/AY57CONP6RHWJA5AZY2QJOHQXY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news"><strong>(연합뉴스)</strong> 삼성의 ‘시스템반도체 1등 전략’에 꼭 필요한 3가지</a>
+            <br>
+            <a href="https://www.fnnews.com/news/202105061010156628"><strong>(연합뉴스)</strong> '시스템+메모리를 하나로' 삼성전자, 꿈의 반도체 기술 '한발짝'</a>
+        </div>
+        <div id="stockinfo">
+            <h2 style="padding: 10px;"><strong>Stock Detailed Info</strong></h3>
+            <p style="padding-left: 20px; color: red;"> <strong>- 외국인 매도 매수 : +4500</strong> </p>
+            <p style="padding-left: 20px; color: blue;"> <strong>- 기관 매도 매수 : -3000</strong></p>
+            <p style="padding-left: 20px; color: blue;"> <strong>- 개인 매도 매수 : -5400</strong></p>
+        </div>
+        <div id="stock">
+            <img src="samsung.png" alt="samsung" width="560px" height="380px" style="padding:10px;">
+            
+        </div>
+        <div id="predict">
+          <h2 style="padding: 10px;"><strong>Stock Prediction</strong></h3>
+            <img style = "display: inline-block;" width="450px" height="300px" src="https://mblogthumb-phinf.pstatic.net/MjAyMDAzMDdfODcg/MDAxNTgzNTg5NDczNDYy.2iMRNzDnF7rrCJFWkKEuPG9tu_ActNrDnmjNRJE7qY0g.9GsEa882QpsMS_7Mp4jEFV3KjjZIWlQSF3CGmYhgrXkg.PNG.baek2sm/1.4.3-3.png?type=w800" alt="">
+            <p style="padding-left: 20px; padding-top: 20px; color: black; display: inline-block;"> <strong>- 수익률 예측 : +1.23% <br><br>- 주각 수익률 예측 : -0.04% <br><br>- 월간 수익률 예측 : +2.34%</strong> </p>
+            <br>
+        </div>
+      </article>
+      <footer>
+
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+</body>
+</html>
