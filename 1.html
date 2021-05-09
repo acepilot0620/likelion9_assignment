@@ -1,1 +1,119 @@
-쑥과 마늘을 먹고 사람이 되었다
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <title>XX일보</title>
+    </head>
+    <body>
+        <header>
+            <p>여기는 로고와 이름이 들어갑니다.</p>
+        </header>
+        <nav>
+            <p>여기는 사이트 메뉴입니다.</p>
+        </nav>
+        <section>
+            <p>여기서부터는 기사가 들어갑니다.</p>
+            <article>
+                <p>여기는 <strong>첫번째 기사입니다.</strong></p>
+            </article>
+            <article>
+                <p><em>여기는 두번째 기사입니다.</em></p>
+            </article>
+        </section>
+        <aside>
+            <p>여기에 광고가 들어갑니다.</p>
+        </aside>
+        <footer>
+            <p>여기에 회사 정보가 들어갑니다.</p>
+        </footer>
+        <br>
+        <a href="https://www.google.com">구글</a><br>
+        <img src='https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjFfNTEg%2FMDAxNjExMTU1OTY2NTc0.BXSDKElkP467TjiTcNVHxV4iDwdrI4Z50CGGnzOH3xUg.VAPoV7960sKVMP0akZjSaoITaWyByNZ4y6MEyf4DKbAg.JPEG.boboo31%2F1611155866016.jpg&type=ofullfill340_600' alt='dog photo' height="320px" weight="160px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/djfLO4R8kng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table>
+            <tr>
+                <th>성별</th>
+                <th>학년</th>
+                <th>이름</th>
+            </tr>
+            <tr>
+                <td>남</td>
+                <td>3</td>
+                <td>수노</td>
+            </tr>
+            <tr>
+                <td>여</td>
+                <td>3</td>
+                <td>곽두팔</td>
+            </tr>
+        </table> <br>
+        <table>
+            <tr>
+                <th>성별</th>
+                <td>남</td>
+                <td>여</td>
+            </tr>
+            <tr>
+                <th>학년</th>
+                <td colspan="2">3</td>
+                
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td>수노</td>
+                <td>곽두팔</td>
+            </tr>
+        </table><br>
+        <h3>장보기목록</h3>
+        <ul>
+            <li>연필</li>
+            <ul>
+                <li>제트</li>
+                <li>독도</li>
+            </ul>
+            <li>지우개</li>
+        </ul>
+        <h3>to-do 리스트</h3>
+        <ol start="3">
+            <li>롤</li>
+            <li>공부</li>
+            <li value="8">맛집</li>
+        </ol>
+        <ol type="I">
+            <li>안녕</li>
+            <li>은정</li>
+        </ol>
+        <br>
+        <h2>회원가입</h2>
+        <form action="my app" method="get">
+            <div>
+                <label for="userid">아이디: </label>
+                <input type="text" id="userid" name="id" placeholder="아이디를 입력하세요" value="snow">
+            </div>
+            <div>
+                <label for="password">비밀번호: </label>
+                <input type="passoword" id="password" name="password" placeeholder="비밀번호를 입력하세요">
+            </div>
+            <div>
+                <label for="gender">성별:</label>
+                <select name="gender" id="gender">
+                    <option value="male">남성</option>
+                    <option value="female">여성</option>
+                </select>
+            </div>
+            <div>
+                <label for="job">직업:</label>
+                <select name="job" id="job">
+                    <option value="student">학생</option>
+                    <option value="teacher">선생님</option>
+                </select>
+            </div>
+            <div>
+                <label for="introduce">자기소개:</label>
+                <textarea name="introduce" id="introduce" cols="30" rows="10" placeholder="자기소개를 입력하세요"></textarea>
+            </div>
+            <button type="submit">제출</button>
+            <button type="reset">리셋</button>
+            </form>
+    </body>
+</html>
