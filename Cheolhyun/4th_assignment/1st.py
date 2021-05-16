@@ -6,3 +6,5 @@ for i in range(a):
         for j in range(b):
             print("*", end='')
             
+# 반복문 하나 쓰고 print("*"*(i+1)) 이런 식으로 쓰면 더 간단함
+            
