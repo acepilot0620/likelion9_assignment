@@ -14,11 +14,10 @@ tam2_cut = [45,39,33,25,20,15,12,8,0]
 
 a = name.index(input("이름을 입력해 주세요 : "))
 
-def rate(k, t):
-    for i in range(7):
-        if k >= t[i]:
+def rate(score, cut):
+    for i in range(len(cut)):
+        if score >= cut[i]:
             return i+1
-            break
 
 print("학생 :", name[a])
 print("국어 :", rate(kor_score[a], kor_cut))
