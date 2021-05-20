@@ -1,0 +1,64 @@
+.me{
+    display: flex;
+}
+
+
+.my-image{
+    margin: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+    width: 300px; 
+    height: 300px;
+
+}
+
+.my-info{
+    margin: 30px 30px 0px 30px;
+    height: 100%;
+    padding: 60px;
+}
+
+
+
+#edit-button{
+    margin-top: 20px;
+    width: 180px;
+    height: 30px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#edit-button:hover{
+    background-color: white;
+    color: lightcoral;
+    transition: all .3s;
+}
+
+#big-text{
+    margin-left: 80px;
+    font-weight: 600;
+    font-size : 30px;
+}
+
+.sample-image{
+    width: 250px;
+    height: 250px;
+}
+
+img:hover {
+    background-color: white;
+    transition: all .5s;
+    opacity:0.6; 
+    }
+
+.footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}

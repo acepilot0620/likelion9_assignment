@@ -1,0 +1,55 @@
+#head {
+    text-align: center;
+}
+
+#name {
+    margin: 180px 0 0 130px;
+    font-weight: 600;
+    font-size : 30px;
+}
+
+#explain {
+    margin: 200px 0 0 130px;
+    font-size: 17px;
+}
+
+#create-button{
+    margin: 16px 0 0 130px;
+    width: 120px;
+    height: 30px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#create-button:hover{
+    background-color: white;
+    color: lightcoral;
+    transition: all .3s;
+}
+
+.hot-person{
+    background-color:#e2e2e2;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    padding: 80px 100px 80px 100px;
+}
+
+#big-text{
+    margin-left: 50px;
+    font-weight: 600;
+    font-size : 30px;
+}
+
+.footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}
+
