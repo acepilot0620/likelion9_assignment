@@ -11,16 +11,22 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+-tmi^h2mdcpql!_zamw1ih^*(vq1-l-)&=zm%gg(1nk8jot-s'
+SECRET_KEY = 'django-insecure-a$fo29qvscu8c=^+h$j$xtw+wuuoenw40^+&po+kpy=m&vg#72'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main', # 우리가 생성한 앱 적어주기
+    'yejinblog.apps.YejinblogConfig',
 ]
 
 MIDDLEWARE = [
