@@ -1,0 +1,73 @@
+.nav_bar {
+  background-color: bisque;
+  margin: 0px;
+  padding: 30px;
+  width: 100%;
+  height: 10%;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+}
+.techs {
+  font-size: 20px;
+}
+.techs li {
+  padding: 10px;
+  font-weight: bolder;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts {
+  display: flex;
+  padding-left: 160px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+.django {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.baekjoon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.docker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.django img {
+  margin-top: 50px;
+  width: 200px;
+  height: 100px;
+  padding: 30px;
+}
+
+.baekjoon img {
+  width: 300px;
+  height: 150px;
+  padding: 30px;
+}
+
+.docker img {
+  width: 200px;
+  height: 150px;
+  padding: 30px;
+}
+
+.sunday {
+  color: #f79dc2;
+}
+.saturday {
+  color: skyblue;
+}
