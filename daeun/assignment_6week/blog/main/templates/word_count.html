@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="contents">
+        <h2>word count</h2>
+
+        <form action="{% url 'word_count'%}" method="post">
+        {% csrf_token %}
+            <p>텍스트를 입력해주세요 : </p>
+            <textarea name="text_input" cols="80" rows="30">{{text}}</textarea>
+            <div style="padding-bottom: 20px;"><button type="submit">submit</button></div>
+        </form>
+        <div>
+            {% if result %}
+            결과  : <br>
+                {% for k, v in result.items %}
+                    {{k}} : {{v}}번<br>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
