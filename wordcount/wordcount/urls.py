@@ -1,4 +1,4 @@
-"""blog URL Configuration
+"""wordcount URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from main_hj import views
+from wordcount import views as wc
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('main_hj.urls')),
+    path('', include('main.urls')),
+    path('wc/',wc.home, name=wc),
+    path('wc/result/',wc.result, name='result'),
+
 ]
