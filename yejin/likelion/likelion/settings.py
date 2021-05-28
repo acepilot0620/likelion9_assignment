@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'yejinblog.apps.YejinblogConfig',
+    'yejinblog.apps.YejinblogConfig', # yejinblog앱 등록해주기
+    'hw6.apps.Hw6Config', # 6주차 과제앱 등록해주기
 ]
 
 MIDDLEWARE = [

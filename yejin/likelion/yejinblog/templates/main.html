@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yexjin's blog</title>
+    <!-- static files를 사용하기 위해 꼭 해줘야하는 선언 -->
     {% load static %}
     <link rel="stylesheet" href="{% static "main.css" %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -163,6 +164,22 @@
 
       <br/><br/>
     <hr />
+
+    <form action="" method="POST" >
+      {% csrf_token %}
+      <p>텍스트를 입력해주세요</p>
+      <Textarea name="text_input" cols="30" rows="10" >{{text}}</Textarea> <br />
+      <input type="submit" title="제출"> <!-- submit으로 주면 버튼처럼 생성 -->
+   </form>
+
+   {% if  word_num%}
+
+   <h3>글자수: {{word_num}}</h3>
+
+   {% endif %}
+
+   <a href="{% url 'login'%}"><button>로그인</button></a>
+   
     <footer class="footer">
         <p>소개   &nbsp;&nbsp;&nbsp;&nbsp; 블로그 &nbsp;&nbsp;&nbsp;&nbsp;  채용  &nbsp;&nbsp;&nbsp;&nbsp; 정보 &nbsp;&nbsp;&nbsp;&nbsp;  도움말   &nbsp;&nbsp;&nbsp;&nbsp;API  &nbsp;&nbsp;&nbsp;&nbsp; 개인정보처리방침 &nbsp;&nbsp;&nbsp;&nbsp;  약관 &nbsp;&nbsp;&nbsp;&nbsp;  인기계정 &nbsp;&nbsp;&nbsp;&nbsp;  해시태그   &nbsp;&nbsp;&nbsp;&nbsp;위치</p>
         <p>한국어 &nbsp;&nbsp;&nbsp;&nbsp; ©2021 Yejin's blog</p>
