@@ -4,29 +4,50 @@ wordused = { }
 
 def set_key(dictionary, key):
     if key not in dictionary:
-        dictionary[key] = int(1)
+        dictionary[key] = 1
     else:
-        dictionary[key] = [int(dictionary[key]+1)]
+        dictionary[key] = (dictionary[key])+1
 
 def home(request):
     if request.method == "POST":
         text = request.POST.get('textInput')
-        blank_list = text.split(' ')
-        blank_num = len(blank_list)
+        if text is not None:
+            blank_list = text.split(' ')
+            blank_num = len(blank_list)
 
-        word_num = len(text)
+            word_num = len(text)
 
-        word_notblank_num = len(text) - text.count(' ')
+            word_notblank_num = len(text) - text.count(' ')
 
-        return render(request, 'home.html', {"blank_num":blank_num, "text":text, "word_num":word_num, "word_notblank_num":word_notblank_num})
+            print("text : ", blank_list)
+            return render(request, 'home.html', {"blank_num":blank_num, "text":text, "word_num":word_num, "word_notblank_num":word_notblank_num})
 
     if request.method == "POST":
         text2 = request.POST.get('wordusedInput')
-        blank_divide = text2.split(' ')
-        for i in range(len(blank_divide)):
-            set_key(wordused, blank_divide[i])
+        wordused.clear()
+        if text2 is not None:
+            blank_divide = text2.split(' ')
+            for i in range(len(blank_divide)):
+                set_key(wordused, blank_divide[i])
 
-        return render(request, 'home.html', {"keys":list(wordused.keys()), "text2":text2, "values":list(wordused.values())})
+            print(wordused)
+            print("text2 : ", blank_divide)
+
+            keys = list(wordused.keys())
+            values = list(wordused.values())
+
+            result = []
+
+            print("keys", keys)
+            
+
+            for i in range(len(wordused)):
+                result.append(f'{keys[i]} : {values[i]}')
+
+            print("result", result)
+
+            return render(request, 'home.html', {"text2":text2, "result":result})
+        
         
     return render(request, "home.html")
 
