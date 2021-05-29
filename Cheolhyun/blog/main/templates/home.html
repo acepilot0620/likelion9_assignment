@@ -19,5 +19,37 @@
         <input type="submit" value="제출">
     </form>
     <img src="{% static 'cat.jpg' %}" alt="" width="50" height="50">
+
+    <h1>글자수 세기</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <textarea name="textInput" id="" cols="50" rows="20">{{text}}</textarea>
+        <br>
+        <input type="submit" title="띄어쓰기 구분" value="제출" name="">
+    </form>
+    {% if word_num %}
+    <h3>띄어쓰기 구분 : {{blank_num}}</h3>
+    <h3>글자수 : {{word_num}}</h3>
+    <h3>글자수 : {{word_notblank_num}}</h3>
+    {% else %}
+    <h3>결과창</h3>
+    {% endif %}
+
+    <h1>글자 사용 횟수</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <textarea name="wordusedInput" id="" cols="50" rows="20">{{text2}}</textarea>
+        <br>
+        <input type="submit" title="제출" value="제출" name="">
+    </form>
+    {% if blank_divide %}
+    <h3>{{keys}}[i] : {{values}}[i]</h3>
+    {% else %}
+    <h3>결과창</h3>
+    {% endif %}
+
+    <a href="{% url 'login' %}"><button>로그인</button></a>
+
+
 </body>
 </html>
