@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>글자 수 세기</p>
+    <form action="" method = "POST">
+        {%csrf_token%}
+        <textarea name="user_input" id="" cols="30" rows="10">{{text}}</textarea>
+        <input type="submit" title = "글자수세기">
+    </form>
+    {% if word_num %}
+        <h3>글자수 : {{word_num}}</h3>
+    {% else %}
+        <h3>결과 확인창</h3>
+    {% endif %}
+    
+    <a href="{%url 'login' %}"> <button>로그인</button> </a>
+    
+</body>
+</html>
