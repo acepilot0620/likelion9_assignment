@@ -23,7 +23,7 @@ def home(request):
     if request.method == "POST":
         text2 = request.POST.get('wordusedInput')
         blank_divide = text2.split(' ')
-        for i in len(blank_divide):
+        for i in range(len(blank_divide)):
             set_key(wordused, blank_divide[i])
 
         return render(request, 'home.html', {"keys":list(wordused.keys()), "text2":text2, "values":list(wordused.values())})

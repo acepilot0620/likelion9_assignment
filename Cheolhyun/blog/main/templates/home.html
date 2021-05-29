@@ -40,7 +40,7 @@
         {% csrf_token %}
         <textarea name="wordusedInput" id="" cols="50" rows="20">{{text2}}</textarea>
         <br>
-        <input type="submit" title="제출" value="제출" name="">
+        <input type="submit" title="글자 사용 횟수" value="제출" name="">
     </form>
     {% if blank_divide %}
     <h3>{{keys}}[i] : {{values}}[i]</h3>
