@@ -1,0 +1,16 @@
+<div style="text-align: center;">
+    <h3>입력하신 글입니다.</h3>
+    {{fulltext}}
+    <br>
+    <br>
+    <h3 style="color: blue">입력한 글은 총 {{count}}개의 단어로 이루어져있습니다.</h3>
+    <br>
+    <br>
+    <h3>각 단어별로 사용된 횟수입니다.</h3>
+    <div style="color: red">
+    {% for word, totalCount in wordDict %}
+        {{word}} : {{totalCount}}
+        <br>
+    {% endfor %}
+    </div>
+</div>
