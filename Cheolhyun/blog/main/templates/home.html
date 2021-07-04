@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+    <title>home</title>
+</head>
+<body>
+    <h1>홈화면</h1>
+    <form action="hello">
+        <label for="nameInput">이름 : </label>
+        <input id="nameInput" name="name">
+
+        <label for="contentInput">내용 : </label>
+        <input id="contentInput" name="content">
+        <input type="submit" value="제출">
+    </form>
+    <img src="{% static 'cat.jpg' %}" alt="" width="50" height="50">
+
+    <h1>글자수 세기</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <textarea name="textInput" id="textarea1" cols="50" rows="20">{{text}}</textarea>
+        <br>
+        <input type="submit" title="띄어쓰기 구분" value="제출" name="">
+    </form>
+    {% if word_num %}
+    <h3>띄어쓰기 구분 : {{blank_num}}</h3>
+    <h3>글자수(띄어쓰기 포함) : {{word_num}}</h3>
+    <h3>글자수(띄어쓰기 제외) : {{word_notblank_num}}</h3>
+    {% else %}
+    <h3>결과창</h3>
+    {% endif %}
+
+    <h1>글자 사용 횟수</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <textarea name="wordusedInput" id="textarea2" cols="50" rows="20">{{text2}}</textarea>
+        <br>
+        <input type="submit" title="글자 사용 횟수" value="제출" name="">
+    </form>
+    {% if result %}
+    {% for i in result %}
+    <h3>{{i}}</h3>
+    {% endfor %}
+    {% else %}
+    <h3>결과창</h3>
+    {% endif %}
+
+    <a href="{% url 'login' %}"><button>로그인</button></a>
+
+
+</body>
+</html>

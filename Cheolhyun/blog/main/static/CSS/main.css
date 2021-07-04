@@ -1,0 +1,379 @@
+body {
+	background-color: white;
+	margin: 0%;
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+#title { 
+float: left; background-color:white;
+width: 100%; height:15%; 
+position: relative;
+} 
+
+.logo_main {
+	background-image: URL(../resource/logo_main_2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 10%;
+	height: 100%;
+	top: -1%;
+	left: 2.4%;
+	opacity: 85%;
+	margin: 0% 0%;
+	position: relative;
+	cursor:pointer;
+	transition: all .3s ease-out;
+
+	overflow:auto;
+	-ms-overflow-style: none;
+}
+.logo_main:hover{
+	opacity: 100%;
+}
+
+#logo_text{
+	background-color: rgba( 255, 255, 255, 0.5 );
+	visibility: hidden;
+	opacity: 0%;
+	position: fixed;
+	
+	width: 70%;
+	height: 70%;
+	top: 15%;
+	left: 15%;
+	padding: 0% 0%;
+	text-align: center;
+	font-family: East Sea Dokdo;
+	color: black;
+    font-size: 2.5em;
+    /* font-weight: bold; */
+	cursor:pointer;
+	user-select:none;
+	transition: all .3s ease-out;
+}
+
+.chapter { 
+float: left; background-color:white;
+width: 15%; height: 70%; 
+position: relative;
+transition: all .3s ease-out;
+}
+
+.select { 
+background-color:white;
+box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+width: 100%; height: 25%; 
+position: relative;
+transition: all .3s ease-out;
+
+overflow:auto;
+-ms-overflow-style: none;
+}
+.select_chp {
+	width:25%;
+	height:100%;
+	float:left;
+}
+.select#album_1{
+	background-image: URL(../resource/logo_1.jpg);
+	opacity: 100%;
+	background-size: cover;
+}
+.select#album_1:hover{
+	opacity: 100%;
+}
+.select#album_1:hover .sel_context{
+	opacity: 100%;
+}
+.select#album_2{
+	background-image: URL(../resource/logo_2.jpg);
+	opacity: 100%;
+	background-size: cover;
+}
+.select#album_2:hover{
+	opacity: 100%;
+}
+.select#album_2:hover .sel_context{
+	opacity: 100%;
+}
+.select#album_3{
+	background-image: URL(../resource/logo_ep.jpg);
+	opacity: 100%;
+	background-size: cover;
+}
+.select#album_3:hover{
+	opacity: 100%;
+}
+.select#album_3:hover .sel_context{
+	opacity: 100%;
+}
+.select#album_4{
+	background-image: URL(../resource/logo_3.jpg);
+	opacity: 100%;
+	background-size: cover;
+}
+.select#album_4:hover{
+	opacity: 100%;
+}
+.select#album_4:hover .sel_context{
+	opacity: 100%;
+}
+.select::-webkit-scrollbar{
+	display:none;
+}
+
+.sel_context {
+	background-color: rgba( 0, 0, 0, 0.15 ); /* 호버시 될 배경색 */
+	/* //box-shadow: 0 1px 10px rgba(0,0,0,0.5); */
+	opacity: 0%;
+	width: 91%;
+	height: 27px;
+	/* //border-radius: 10px; */
+	position: relative;
+	margin: 0px auto;
+	padding: 5%;
+	
+	text-align: center;
+	font-family: Nanum Gothic;
+	color: white;
+    font-size: 18px;
+    font-weight: bold;
+	cursor:pointer;
+	user-select:none;
+	transition: all .3s ease-out;
+}
+.sel_context:hover {
+	background-color: rgba( 0, 0, 0, 0.9 ); /* 글씨칸 달라지는 거 */
+}
+
+.sel_context_r {
+	background-color: rgba(255,255,255,0.4);
+	/* //box-shadow: 0 1px 10px rgba(0,0,0,0.5); */
+	opacity: 0%;
+	display:block;
+	height:100%;
+	width:100%;
+	position:relative;
+	padding: 35% 0%;
+	top:0;
+	left:0;
+	
+	text-align: center;
+	font-family: Nanum Gothic;
+	color: white;
+    font-size: 25px;
+    font-weight: bold;
+	cursor:pointer;
+	user-select:none;
+	transition: all .3s ease-out;
+}
+.sel_context_r:hover {
+	background-color: rgba( 255, 255, 255, 0.7 );
+}
+
+.aaa {
+	display:block;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.text_hide {
+	font:0/0 a;
+	color:transparent;
+	text-show: none;
+	background-color:transparent;
+	border:0;
+}
+
+.main { 
+float: left; background-color:white; 
+width: 100%; height: 100%;
+/* padding: 5% 0%; */
+}
+#main_image {
+	width: 100%;
+	height: 100%;
+	background-image: URL("../resource/thornapple.jpg");
+	opacity: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin: 30px 0px;
+}
+#main_specific {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	line-height: 100px;
+	font-family: Nanum Gothic;
+	color: black;
+	padding:5% 0%;
+	font-size: 10px;
+	font-style: italic;
+}
+#main_album {
+	width: 100%;
+	height: 50%;
+}
+#main_schedule {
+	width: 100%;
+	height: 100%;
+	background-image: URL("../resource/THAP_galaxy_square.jpg");
+	opacity: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin: 30px 0px;
+}
+#main_bottom {
+	width: 100%;
+	height: 50%;
+}
+.sns_icon {
+	float: right;
+	width: 70px;
+	height: 70px;
+	opacity: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 10px;
+	border-radius: 50%;
+	box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.5);
+}
+#facebook {
+	background-image: URL("../resource/facebook.jpg");
+}
+#instagram {
+	background-image: URL("../resource/instagram2.png");
+}
+#hi {
+	width: 100%;
+	height: 100%;
+}
+
+.rside { 
+float: left; background-color:white; 
+position: relative;
+width: 15%; height: 70%; 
+transition: all .3s ease-out;
+}
+
+.select_r{
+	overflow:hidden;
+-ms-overflow-style: none;
+}
+
+.select#album {
+	background-image: URL("../resource/album_3.png");
+	opacity: 30%;
+	background-size: cover;
+}
+.select#album:hover{
+	opacity: 100%
+}
+.select#album:hover .sel_context_r{
+	opacity: 100%;
+}
+.select#mv {
+	background-image: URL("../resource/mv.jpg");
+	opacity: 30%;
+	background-size: cover;
+}
+.select#mv:hover{
+	opacity: 100%
+}
+.select#mv:hover .sel_context_r{
+	opacity: 100%;
+}
+.select#live_1 {
+	background-image: URL("../resource/live_1.jpg");
+	opacity: 30%;
+	background-size: cover;
+}
+.select#live_1:hover{
+	opacity: 100%
+}
+.select#live_1:hover .sel_context_r{
+	opacity: 100%;
+}
+.select#live_2 {
+	background-image: URL("../resource/live_2.jpg");
+	opacity: 40%;
+	background-size: cover;
+}
+.select#live_2:hover{
+	opacity: 100%
+}
+.select#live_2:hover .sel_context_r{
+	opacity: 100%;
+}
+
+.bottom {
+	width:100%;
+	height:15%;
+	background-color: white;
+	position: relative;
+	float: left;
+}
+
+.info {
+	background-color: transparent;
+	opacity: 50%;
+	width: 60px;
+	height: 50px;
+	top: 2%;
+	margin: 0.5% 1%;
+	border-radius: 10px;
+	font-family: 'asap', cursive;
+	/* //font-weight: bold; */
+	font-size: 17px;
+
+	float: right;
+	position: relative;
+	transition: all .3s ease-in-out;
+	overflow: hidden;
+}
+.info_text {
+	color: black;
+	opacity: 0%;
+	padding: 14px 20px;
+	float: left;
+	position: relative;
+	transition: all .3s ease-in-out;
+}
+#happyrobot{
+	background-image: URL("../resource/happyrobot.png");
+	width: 50px;
+	height: 50px;
+	top: 2%;
+	margin: 0.5% 1%;
+
+	float: right;
+	position: relative;
+}
+#email{
+	background-image: URL("../resource/mail.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	margin: 1px 5px;
+
+	float: right;
+	position: relative;
+}
+.info:hover{
+	background-color: white;
+	opacity: 90%;
+	width: 300px;
+}
+.info:hover .info_text{
+	opacity: 100%;
+}

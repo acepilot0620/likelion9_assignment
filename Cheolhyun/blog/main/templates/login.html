@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 창</title>
+</head>
+<body>
+    <p>로그인</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+            <label for="username">ID</label>
+            <input name="username" type="text" placeholder="아이디를 입력해주세요">
+            <label for="password">PW</label>
+            <input name="password" type="text" placeholder="비밀번호를 입력해주세요">
+            <input type="submit" title="로그인">
+            <p style="color : red;">{{error_msg}}</p>
+    </form>
+</body>
+</html>
