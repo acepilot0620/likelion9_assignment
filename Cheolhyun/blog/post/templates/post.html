@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        {% csrf_token %}
+        <h1>새로운 글 작성</h1>
+        <label for="title">제목</label>
+        <input type="text" name="title">
+        <br>
+        <label for="content">내용</label>
+        <textarea name="content" cols="80" rows="100"></textarea>
+        <input type="submit" value="저장">
+    </form>
+</body>
+</html>
